@@ -21,7 +21,7 @@ body:
   - type: textarea
     id: reproduce
       attributes:
-      label: "To Reproduce"
+      label: To Reproduce
       description: What steps did you take when the issue occured? 
       placeholder: "Hello"
   - type: textarea
