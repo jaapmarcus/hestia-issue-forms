@@ -20,10 +20,10 @@ body:
       required: true
   - type: textarea
     id: reproduce
-      attributes:
+    attributes:
       label: To Reproduce
       description: What steps did you take when the issue occured? 
-      placeholder: "Hello"
+      placeholder: Hello 
   - type: textarea
     id: logs
     attributes:
