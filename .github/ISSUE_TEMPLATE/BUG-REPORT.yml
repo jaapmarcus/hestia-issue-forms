@@ -15,29 +15,18 @@ body:
       label: Describe the bug
       description: A clear and concise description of what the bug is. Please include as much information as possible in your issue report, such as the configuration of your server and any troubleshooting steps that you've already performed.
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: ""
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+  - type: textarea
+    id: reproduce
+      attributes:
+      label: "To Reproduce"
+      description: What steps did you take when the issue occured? 
+      placeholder: 
+      value: "1. Ex.: Click on the "Web" tab.
+              2. Ex.: Click on "Add Web Domain".
+               3. Ex.: Attempted to add a domain and received an Internal Server Error."
   - type: textarea
     id: logs
     attributes:
