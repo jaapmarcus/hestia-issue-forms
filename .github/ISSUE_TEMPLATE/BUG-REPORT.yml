@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: reproduce
     attributes:
-      label: To Reproduce
+      label: Steps to taken to repoduce the error?
       description: |
         What steps did you take when the issue occured?
         1. Ex. Click on the Web tab.
@@ -42,6 +42,15 @@ body:
       placeholder: Ubuntu 20.04 or Debian 11
     validations:
       required: true
+  - type: checkboxes
+    id: setup
+    label: Setup
+    options:
+      - label: Nginx
+      - label: Apache2
+      - label: Mysql
+      - label: Postgesql
+      - label: Exim
   - type: textarea
     id: logs
     attributes:
