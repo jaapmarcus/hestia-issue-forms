@@ -22,7 +22,7 @@ body:
     attributes:
       label: To Reproduce
       description: What steps did you take when the issue occured? 
-      placeholder: | 
+      value: | 
 1. Ex. Click on the Web tab.
 2. Ex. Click on Add Web Domain.
 3. Ex. Attempted to add a domain and received an Internal Server Error.
