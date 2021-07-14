@@ -22,9 +22,8 @@ body:
     attributes:
       label: To Reproduce
       description: What steps did you take when the issue occured? 
-      placeholder: 1. Ex.: Click on the "Web" tab.
-2. Ex.: Click on "Add Web Domain".
-3. Ex.: Attempted to add a domain and received an Internal Server Error.
+     validations: 
+      required: true
   - type: textarea
     id: logs
     attributes:
