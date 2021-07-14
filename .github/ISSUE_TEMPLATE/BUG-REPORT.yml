@@ -26,17 +26,25 @@ body:
         1. Ex. Click on the Web tab.
         2. Ex. Click on Add Web Domain.
         3. Ex. Attempted to add a domain and received an Internal Server Error.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Hestia Control Panel version
+      placeholder: 1.4.6
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Ubuntu 20.04 or Debian 11
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
