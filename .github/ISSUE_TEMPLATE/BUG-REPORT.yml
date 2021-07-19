@@ -41,7 +41,7 @@ body:
         - Database (MariaDB / Postgresql)
         - Email (Exim, Dovecot, Antivirus / Antispam, Webmail)
         - Firewall (Iptables / Fail2ban)
-      validations:
+    validations:
       required: true
   - type: input
     id: version
