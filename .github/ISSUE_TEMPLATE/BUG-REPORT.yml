@@ -28,6 +28,18 @@ body:
         3. Ex. Attempted to add a domain and received an Internal Server Error.
     validations:
       required: true
+  - type: dropdown
+    id: part
+    attributes:
+      label: Issue can be found in?
+      options:
+        - Backend
+        - Command Line Interface
+        - During Install or Upgrade
+        - Web server (Nginx, Apache2, PHP or Let encrypt)
+        - Database (MariaDB / Postgresql)
+        - Email (Exim, Dovecot, Antivirus / Antispam, Webmail)
+        - Firewall (Iptables / Fail2ban)
   - type: input
     id: version
     attributes:
