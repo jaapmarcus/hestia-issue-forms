@@ -1,0 +1,10 @@
+name: Feature
+description: Suggest an idea for this project
+title: "[Feature] "
+labels: [feature]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request
+        Try to include as much as revelant information as possible.
