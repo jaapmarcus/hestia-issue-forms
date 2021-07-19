@@ -32,6 +32,7 @@ body:
     id: part
     attributes:
       label: Issue can be found in?
+      multiple: true
       options:
         - Backend
         - Command Line Interface
@@ -40,6 +41,8 @@ body:
         - Database (MariaDB / Postgresql)
         - Email (Exim, Dovecot, Antivirus / Antispam, Webmail)
         - Firewall (Iptables / Fail2ban)
+      validations:
+      required: true
   - type: input
     id: version
     attributes:
