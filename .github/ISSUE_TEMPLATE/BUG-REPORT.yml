@@ -1,52 +1,57 @@
 name: Bug Report
-description: File a bug report and help us to improve HestiaCP
+description: File a bug report and help us to improve Hestia Control Panel
 title: "[Bug] "
 labels: [bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-        
-        Please do not include any private or senstive information such as email adress, password or ip adresses. 
+        If you have encountered a bug or problem in Hestia Control Panel, use this form to let us know.
+        **Important: DO NOT include any private/sensitive information such as email addresses, passwords, IP addresses, or hostnames.**
   - type: textarea
     id: describe
     attributes:
       label: Describe the bug
-      description: A clear and concise description of what the bug is. Please include as much information as possible in your issue report, such as the configuration of your server and any troubleshooting steps that you've already performed.
-      placeholder: Tell us what you see!
+      description: |
+        A clear description of what the bug is. Include as much detail as possible, such as the configuration of your server and any troubleshooting steps that you've already performed.
+      placeholder: Tell us exactly what you see!
     validations:
       required: true
   - type: textarea
     id: reproduce
     attributes:
-      label: Steps to taken to repoduce the error?
+      label: Tell us how to replicate the bug
       description: |
-        What steps did you take when the issue occured?
-        1. Ex. Click on the Web tab.
-        2. Ex. Click on Add Web Domain.
-        3. Ex. Attempted to add a domain and received an Internal Server Error.
+        What steps did you take when the bug occured or things did not work as you expected?
+      placeholder: |
+        1. Click on the Web tab.
+        2. Click on Add Web Domain.
+        3. Attempted to add a domain and received an Internal Server Error after pressing Save.
     validations:
       required: true
   - type: dropdown
     id: part
     attributes:
-      label: Issue can be found in?
+      label: Which components are affected by this bug?
       multiple: true
       options:
-        - Backend
-        - Command Line Interface
-        - During Install or Upgrade
-        - Web server (Nginx, Apache2, PHP or Let encrypt)
-        - Database (MariaDB / Postgresql)
-        - Email (Exim, Dovecot, Antivirus / Antispam, Webmail)
-        - Firewall (Iptables / Fail2ban)
+        - Control Panel Backend
+        - Control Panel Command Line Interface
+        - Control Panel Installation or Upgrade
+        - Control Panel Web Interface
+        - Backend Web Server (Nginx, Apache2)
+        - Database (MariaDB, PostgreSQL)
+        - Let's Encrypt SSL
+        - Mail (Exim, Dovecot)
+        - Mail Security (Antivirus, Antispam)
+        - Webmail (Roundcube, Rainloop)
+        - Firewall (Iptables, Fail2ban)
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Version HestiaCP
+      label: Hestia Control Panel Version
       placeholder: 1.x.x
     validations:
       required: true
@@ -60,6 +65,10 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Log capture
+      description: Copy and paste any relevant log output in the field below. This will be automatically formatted into code, so no need for backticks. **Remove any sensitive information before submitting!**
       render: shell
+  - type: markdown
+    attributes:
+      value: |
+        *Thank you* for taking the time to fill out this bug report.
